@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.museum-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fff;
+    position: relative; /* تغيير من fixed إلى relative لتجنب التأثير على التنقل */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.museum-image-container {
+    flex: 1;
+    order: 40;
+    padding: 10px;
+    margin-top: 0;
+    max-width: 100%;
+}
+
+.museum-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* تقليل الزوايا لتكون أقل حدة */
+}
+
+.museum-content-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.museum-content-container h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.museum-content-container p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.museum-details {
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.4;
+}
+
+.museum-details span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* تحسين التنسيق لأحجام الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .museum-section {
+        flex-direction: column;
+        padding: 20px; /* تقليل الحشو في الشاشات الصغيرة */
+    }
+
+    .museum-image-container, .museum-content-container {
+        max-width: 100%;
+        flex: 1 1 100%; /* ضمان أن كل عنصر يأخذ عرض كامل */
+    }
+
+    .museum-content-container h1 {
+        font-size: 1.5em; /* تقليل حجم الخط */
+    }
+
+    .museum-content-container p {
+        font-size: 0.9em; /* تقليل حجم الخط أكثر */
+    }
+
+    .museum-details {
+        font-size: 0.8em; /* تقليل الخط أكثر */
+    }
+
+    .museum-section {
+        padding: 15px;
+    }
+}
+
+/* تغيير تنسيق زر الإغلاق */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.close-button a {
+    color: #ffbb00;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.close-button a:hover {
+    color: #ffcccc;
+}
+
+/* Carousel CSS */
+.carousel-section {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Navigation bar */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0; /* تقليل المسافة داخل الـ nav */
+}
+
+.nav a {
+    margin: 0 15px; /* تقليل المسافة بين العناصر */
+    text-decoration: none;
+    color: #666;
+    font-size: 14px; /* تقليل حجم الخط */
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ea8e22;
+}
+
+/* تخصيص التنسيق للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: nowrap; /* الحفاظ على العناصر في سطر واحد */
+    }
+    
+    .nav a {
+        margin: 0 10px; /* تقليل المسافة بين العناصر أكثر */
+        font-size: 12px; /* تقليل حجم الخط أكثر */
+    }
+}
