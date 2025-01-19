@@ -1,0 +1,271 @@
+/* Expertise Section Styles */
+.expertise {
+    background-color: #4d4d4d; /* Adjust this color to match the background color */
+    text-align: center;
+    padding: 100px 0;
+    color: #d4a95a; /* Text color to match the gold-like tone */
+    margin-bottom: 0; /* Remove margin at the bottom */
+}
+
+
+.expertise h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #d4a95a; /* Expertise heading color */
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.expertise-item {
+    text-align: center;
+    color: #d4a95a;
+}
+
+.expertise-item img {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+.expertise-item p {
+    font-size: 1rem;
+    margin-top:50;
+}
+
+
+
+
+#urban-planning-section {
+    display: flex;
+    width: 100%;
+    padding: 50px 0 0 0; /* No padding at the bottom */
+    margin-bottom: 0; /* Remove margin at the bottom */
+    margin-top: 0; /* Remove margin at the top */
+    padding-top: 0; /* No padding at the top */
+    display: flex;
+    position: relative;
+}
+
+.urban-planning-container {
+    display: flex;
+    width: 100%;
+    height: auto; /* Adjust height as per the content */
+}
+
+
+
+
+.urban-planning-container .left-section {
+    background-color: #6bbf72; /* Light green background */
+    color: white;
+    width: 68%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0 100%, 0 30%); /* تعديل الشكل الهرمي */
+    transform: rotate(90deg); /* تدوير العنصر */
+}
+
+.urban-planning-container .left-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.urban-planning-container .left-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.urban-planning-container .left-section .icon {
+    margin-bottom: 20px;
+}
+
+.urban-planning-container .left-section .icon img {
+    width: 80px; /* Set size for the icon */
+    height: auto;
+}
+
+.urban-planning-container .right-section {
+    width: 100%; /* Adjust width as needed */
+    background-color: #fff;
+}
+
+.urban-planning-container .right-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Interior Design Section Styles */
+.interior-design {
+    display: flex;
+    align-items: stretch;
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin-top: 0; /* Remove margin at the top */
+    padding-top: 0; /* No padding at the top */
+}
+
+.interior-image img {
+    width: 200%;
+    height:100%;
+    object-fit: cover;
+}
+
+.interior-text {
+    width:81%;
+    background-color: #d4a95a; /* Adjust this color to match the purple tone */
+    padding: 0px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text horizontally */
+    position: relative; /* Relative positioning for icon */
+    clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0 100%, 0 30%); /* تعديل الشكل الهرمي */
+    transform: rotate(270deg); /* تدوير العنصر */
+    text-align: center; /* Center text */
+}
+
+.interior-text .icon {
+    position: absolute;
+    top: 50px; /* Increase the top value to move the icon down */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+
+.interior-text .icon img {
+    width: 150px; /* Resize the icon */
+    height: auto;
+}
+
+.interior-text h2 {
+    font-size: 2rem;
+    margin: 60px 0 20px; /* Adjust margin for spacing around the text */
+    margin-top: -10px; /* Negative margin to move it up */
+}
+
+.interior-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+
+
+#Architectural-section {
+    display: flex;
+    width: 100%;
+    padding: 50px 0 0 0; /* No padding at the bottom */
+    margin-bottom: 0; /* Remove margin at the bottom */
+    margin-top: 0; /* Remove margin at the top */
+    padding-top: 0; /* No padding at the top */
+}
+
+.Architectural-Design-container {
+    display: flex;
+    width: 100%;
+    height: auto; /* Adjust height as per the content */
+}
+
+.Architectural-Design-container .left-section {
+    background-color: palevioletred; /* Light green background */
+    color: white;
+    width: 40%; /* Adjust width as needed */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.urban-planning-container .left-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.Architectural-Design-container .left-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.Architectural-Design-container .left-section .icon {
+    margin-bottom: 20px;
+}
+
+.Architectural-Design-container .left-section .icon img {
+    width: 80px; /* Set size for the icon */
+    height: auto;
+}
+
+.Architectural-Design-container .right-section {
+    width: 100%; /* Adjust width as needed */
+    background-color: #fff;
+}
+
+.Architectural-Design-container .right-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Mobile View Adjustments */
+@media screen and (max-width: 768px) {
+    .expertise-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns instead of three */
+        gap: 30px;
+    }
+
+    .urban-planning-container {
+        flex-direction: column; /* Stack left and right sections */
+    }
+
+    .urban-planning-container .left-section, 
+    .urban-planning-container .right-section {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .interior-design {
+        flex-direction: column; /* Stack image and text sections on mobile */
+        height: auto;
+    }
+
+    .interior-image img {
+        width: 100%; /* Ensure image is responsive */
+        height: auto;
+    }
+
+    .interior-text {
+        width: 100%; /* Full width for text block */
+        padding: 15px;
+    }
+
+    .interior-text h2 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    .expertise-item img {
+        width: 50px; /* Resize images for smaller screens */
+        height: 50px;
+    }
+}
+
+/* Hover Effects on Expertise Items */
+.expertise-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Active Navigation Link */
+nav ul li a.active {
+    color: #e4c16f; /* Highlight active page link */
+    font-weight: bold;
+}
