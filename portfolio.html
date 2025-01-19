@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETERNAL</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="index.css" media="screen">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="brief images.html">
+    <link rel="stylesheet" href="brief image2.html">
+    <link rel="stylesheet" href="brief images.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          // Handle click on the image container
+          $('.image-container').click(function() {
+              var imgSrc = $(this).find('img').attr('src');
+              var imgAlt = $(this).find('img').attr('alt');
+
+              // Show the lightbox with the clicked image
+              $('.lightbox-image').attr('src', imgSrc);
+              $('.lightbox-caption').text(imgAlt);
+              $('.lightbox').fadeIn();
+          });
+
+          // Hide the lightbox when clicking outside the content
+          $('.lightbox, .lightbox-blur').click(function() {
+              $('.lightbox').fadeOut();
+          });
+
+          // Prevent lightbox content from closing the lightbox on click
+          $('.lightbox-content').click(function(event) {
+              event.stopPropagation();
+          });
+      });
+    </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html">
+            <img src="logo-014.png" alt="Logo" class="header-logo">
+        </a>
+        <div class="container">
+            
+            <button class="menu-toggle">&#9776;</button> <!-- زر القائمة -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="research-articles.html">Research Articles</a></li>
+                    <li><a href="about.html">About Us</a></li>
+
+                </ul>
+            </nav>
+
+            
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="architectural-title"> Interior Design </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <div class="nav">
+        <a href="Architectural Design.html">Architectural Design</a>
+        <a href="Interior Design.html">Interior Design</a>
+        <a href="Landscape Design.html"> Landscape Design</a>
+    </div>
+    
+    <!-- Image Gallery Section -->
+    <div class="gallery">
+        <div class="image-container">
+            <a href="brief images.html" target="_blank"></a>
+            <img src="011.png" alt="Modern building with triangular design"  onclick="window.location.href='brief images.html';">
+            <div class="overlay"onclick="window.location.href='brief images.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+
+
+        <div class="image-container">
+            <a href="brief image2.html" target="_blank"></a>
+            <img src="0.15.png" alt="Modern building with triangular design"  onclick="window.location.href='brief image2.html';">
+            <div class="overlay"onclick="window.location.href='brief image2.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+
+        
+        <div class="image-container">
+            <a href="brief image3.html" target="_blank"></a>
+            <img src="0.166.png" alt="Modern building with triangular design"  onclick="window.location.href='brief image3.html';">
+            <div class="overlay"onclick="window.location.href='brief image3.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <a href="brief image4.html" target="_blank"></a>
+            <img src="liv1.png" alt="Modern building with triangular design"  onclick="window.location.href='brief image4.html';">
+            <div class="overlay"onclick="window.location.href='brief image4.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+        
+        
+        <!-- Repeat similar structure for other images as needed -->
+    </div>
+
+
+
+    <!-- Background Wrapper -->
+    <div class="background-wrapper">
+        <img src="CAM 04.jpg" alt="Background Image" class="background-image">
+        <div class="middle-text">Interior Design</div>
+    </div>
+
+    <!-- Image Gallery Section -->
+    <div class="gallery">
+        <div class="image-container">
+            <img src="K - 01.png" alt="Modern building with triangular design" onclick="window.location.href='brief image5.html';">
+            <div class="overlay" onclick="window.location.href='brief image5.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="mr1.png" alt="Modern building with triangular design" onclick="window.location.href='brief image6.html';">
+            <div class="overlay" onclick="window.location.href='brief image6.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="as1.png" alt="Modern building with triangular design" onclick="window.location.href='brief image7.html';">
+            <div class="overlay" onclick="window.location.href='brief image7.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="re-la10.png" alt="Modern building with triangular design" onclick="window.location.href='brief image8.html';">
+            <div class="overlay" onclick="window.location.href='brief image8.html';">
+                <p class="description">Lake West,Sheikh Zayed</p>
+            </div>
+        </div>
+    </div>
+        
+        
+        <!-- Repeat similar structure for other images as needed -->
+    </div>
+
+        
+        <!-- Repeat similar structure for other images as needed -->
+    </div>
+    <!-- Image Gallery Section -->
+    <div class="gallery">
+        <div class="image-container">
+            <img src="CAM 08.jpg" alt="Modern building with triangular design" onclick="window.location.href='brief image9.html';">
+            <div class="overlay" onclick="window.location.href='brief image9.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="CAM 04.jpg" alt="Modern building with triangular design" onclick="window.location.href='brief image10.html';">
+            <div class="overlay" onclick="window.location.href='brief image10.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="CAM 01.jpg" alt="Modern building with triangular design" onclick="window.location.href='brief image11.html';">
+            <div class="overlay" onclick="window.location.href='brief image11.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="CAM 013.jpg" alt="Modern building with triangular design" onclick="window.location.href='brief image12.html';">
+            <div class="overlay" onclick="window.location.href='brief image12.html';">
+                <p class="description">Sodic The Estates, Sheikh Zayed</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="023.png" alt="Modern building with triangular design" onclick="window.location.href='brief image13.html';">
+            <div class="overlay" onclick="window.location.href='brief image13.html';">
+                <p class="description">Lake West,Sheikh Zayed</p>
+            </div>
+        </div>
+
+    </div>
+
+
+ <!-- Image Gallery Section -->
+ <div class="gallery">
+    <div class="image-container">
+        <a href="brief images.html" target="_blank"></a>
+        <img src="01 (2).png" alt="Modern building with triangular design"  onclick="window.location.href='brief image14.html';">
+        <div class="overlay"onclick="window.location.href='brief image14.html';">
+            <p class="description">Lake West,Sheikh Zayed</p>
+        </div>
+    </div>
+
+
+    <div class="image-container">
+        <a href="brief image2.html" target="_blank"></a>
+        <img src="01 (3).png" alt="Modern building with triangular design"  onclick="window.location.href='brief image15.html';">
+        <div class="overlay"onclick="window.location.href='brief image15.html';">
+            <p class="description">Lake West,Sheikh Zayed</p>
+        </div>
+    </div>
+
+    
+    <div class="image-container">
+        <a href="brief image3.html" target="_blank"></a>
+        <img src="CAM - 07(3).png" alt="Modern building with triangular design"  onclick="window.location.href='brief image16.html';">
+        <div class="overlay"onclick="window.location.href='brief image16.html';">
+            <p class="description">Lake West,Sheikh Zayed</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="brief image4.html" target="_blank"></a>
+        <img src="+ CAM 01.png" alt="Modern building with triangular design"  onclick="window.location.href='brief image17.html';">
+        <div class="overlay"onclick="window.location.href='brief image17.html';">
+            <p class="description">Lake West,Sheikh Zayed</p>
+        </div>
+    </div>
+    
+    
+    <!-- Repeat similar structure for other images as needed -->
+</div>
+
+
+<!-- Image Gallery Section -->
+<div class="gallery">
+    <div class="image-container">
+        <img src="017(4).png" alt="Modern building with triangular design" onclick="window.location.href='brief image18.html';">
+        <div class="overlay" onclick="window.location.href='brief image18.html';">
+            <p class="description">Sodic The Estates, Sheikh Zayed</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="015(5).png" alt="Modern building with triangular design" onclick="window.location.href='brief image19.html';">
+        <div class="overlay" onclick="window.location.href='brief image19.html';">
+            <p class="description">Sodic The Estates, Sheikh Zayed</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="CAM - 03(6).png" alt="Modern building with triangular design" onclick="window.location.href='brief image20.html';">
+        <div class="overlay" onclick="window.location.href='brief image20.html';">
+            <p class="description">07-VILLA IN THE 5TH DISTRICT</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="CAM 06(7).png" alt="Modern building with triangular design" onclick="window.location.href='brief image21.html';">
+        <div class="overlay" onclick="window.location.href='brief image21.html';">
+            <p class="description">VILLA IN THE 5TH DISTRICT</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="CAM 09(8).png" alt="Modern building with triangular design" onclick="window.location.href='brief image22.html';">
+        <div class="overlay" onclick="window.location.href='brief image22.html';">
+            <p class="description">VILLA IN THE 5TH DISTRICT</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="gallery">
+    <div class="image-container">
+        <a href="brief images.html" target="_blank"></a>
+        <img src="CAM 01(9).jpg" alt="Modern building with triangular design"  onclick="window.location.href='brief image23.html';">
+        <div class="overlay"onclick="window.location.href='brief image23.html';">
+            <p class="description">VILLA IN THE 5TH DISTRICT</p>
+        </div>
+    </div>
+
+
+    <div class="image-container">
+        <a href="brief image2.html" target="_blank"></a>
+        <img src="CAM 01(10).png" alt="Modern building with triangular design"  onclick="window.location.href='brief image24.html';">
+        <div class="overlay"onclick="window.location.href='brief image24.html';">
+            <p class="description">VILLA IN THE 5TH DISTRICT</p>
+        </div>
+    </div>
+
+    
+    <div class="image-container">
+        <a href="brief image3.html" target="_blank"></a>
+        <img src="C 01.png" alt="Modern building with triangular design"  onclick="window.location.href='brief image25.html';">
+        <div class="overlay"onclick="window.location.href='brief image25.html';">
+            <p class="description">VILLA IN THE 5TH DISTRICT</p>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <a href="brief image4.html" target="_blank"></a>
+        <img src="01(11).jpg" alt="Modern building with triangular design"  onclick="window.location.href='brief image26.html';">
+        <div class="overlay"onclick="window.location.href='brief image26.html';">
+            <p class="description">VILLA IN THE 5TH DISTRICT</p>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <a href="brief image4.html" target="_blank"></a>
+        <img src="CAM 01(12).jpg" alt="Modern building with triangular design"  onclick="window.location.href='brief image27.html';">
+        <div class="overlay"onclick="window.location.href='brief image27.html';">
+            <p class="description">VILLA IN THE 5TH DISTRICT</p>
+        </div>
+    </div>
+    <!-- Repeat similar structure for other images as needed -->
+</div>
+
+<!-- Footer Section -->
+<footer id="contact" class="footer-section">
+    <div class="footer-container">
+        <p>Contact us at <a href="mailto:eng.tantawy1@gmail.com">eng.tantawy1@gmail.com</a></p>
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com/eternal.engineering.services"><img src="white-facebook-fb-logo-icon-round-outline-png-11689106239acusrtxplx-removebg-preview.png" alt="https://www.facebook.com/eternal.engineering.services/"></a></li>
+            <li><a href="https://www.instagram.com/eternal.engineering?igsh=MjYzdG0zN2x2OW1m"><img src="images__1_-removebg-preview (1).png" alt="Twitter"></a></li>
+            <li><a href="https://www.linkedin.com/in/engmohamedeltantawy/"><img src="images-removebg-preview (2).png" alt="LinkedIn"></a></li>
+        </ul>
+        <p>&copy; 2024 Eternal. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- زر السهم الذي يأخذك للأعلى -->
+<div id="scroll-to-top" class="scroll-to-top">
+    &#8593; <!-- السهم للأعلى -->
+</div>
+<script src="script.js"></script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        // Toggle the menu when the burger button is clicked
+        menuToggle.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevent the click event from propagating to the document
+            navList.classList.toggle('show'); // Toggle visibility
+        });
+
+        // Close the menu if clicked outside of it
+        document.addEventListener('click', function (event) {
+            // Check if the click target is not the menu toggle or the nav list
+            if (!menuToggle.contains(event.target) && !navList.contains(event.target)) {
+                navList.classList.remove('show'); // Hide the menu
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
