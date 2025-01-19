@@ -1,0 +1,182 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETERNAL</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="index.css" media="screen">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="brief images.css">
+    <link rel="stylesheet" href="Architectural Design.html">
+    <link rel="stylesheet" href="Interior Design.html">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          // Handle click on the image container
+          $('.image-container').click(function() {
+              var imgSrc = $(this).find('img').attr('src');
+              var imgAlt = $(this).find('img').attr('alt');
+
+              // Show the lightbox with the clicked image
+              $('.lightbox-image').attr('src', imgSrc);
+              $('.lightbox-caption').text(imgAlt);
+              $('.lightbox').fadeIn();
+          });
+
+          // Hide the lightbox when clicking outside the content
+          $('.lightbox, .lightbox-blur').click(function() {
+              $('.lightbox').fadeOut();
+          });
+
+          // Prevent lightbox content from closing the lightbox on click
+          $('.lightbox-content').click(function(event) {
+              event.stopPropagation();
+          });
+      });
+    </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html">
+            <img src="logo-014.png" alt="Logo" class="header-logo">
+        </a>
+        <div class="container">
+            
+            <button class="menu-toggle">&#9776;</button> <!-- زر القائمة -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="research-articles.html">Research Articles</a></li>
+                    <li><a href="about.html">About Us</a></li>
+
+                </ul>
+            </nav>
+    
+            
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="architectural-title"> Design Brief </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <div class="nav">
+        <a href="Architectural Design.html">Architectural Design</a>
+        <a href="Interior Design.html">Interior Design</a>
+        <a href="Landscape Design.html">Landscape Design</a>
+        <a href="202409_ETERNAL PREVIOUS EXPERIENCE.pdf" download>DOWNLOD THE PORTFOLIO</a>
+
+    </div>
+
+
+
+
+    <section class="museum-section">
+        <div class="close-button">
+            <a href="Interior Design.html" onclick="history.back()">X</a>
+        </div>
+    
+        <div class="museum-image-container">
+            <!-- Carousel Section -->
+            <section class="carousel-section">
+                <div class="carousel-images" id="carousel-images">
+                    <img src="01(11).jpg" alt="Grand Egyptian Museum">
+                    <img src="02(11).jpg" alt="Image 2">
+                    <img src="03(11).jpg" alt="Grand Egyptian Museum">
+                    <img src="016(11).jpg" alt="Image 2">
+                    <img src="017(11).jpg" alt="Grand Egyptian Museum">
+                    <img src="018(11).jpg" alt="Image 2">
+                    <img src="019(11).jpg" alt="Grand Egyptian Museum">
+                    
+                    
+                </div>
+                <div class="carousel-buttons">
+                    <button onclick="prevSlide()">&#10094;</button>
+                    <button onclick="nextSlide()">&#10095;</button>
+                </div>
+            </section>
+        </div>
+    
+        <div class="museum-content-container">
+            <h1>VILLA 5th (Master bedroom first floor ) </h1>
+            <p>
+
+            </p>
+            <p>
+                
+            </p>
+            <div class="museum-details">
+                <span><strong>Location:</strong> Sadat city, Egypt</span>
+                <span><strong>Services:</strong> Production Architect, Architect of Record</span>
+                <span><strong>Market:</strong> villa</span>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        let currentIndex = 0;
+    
+        function showSlide(index) {
+            const carousel = document.getElementById('carousel-images');
+            const totalSlides = carousel.children.length;
+            if (index >= totalSlides) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = totalSlides - 1;
+            } else {
+                currentIndex = index;
+            }
+            const offset = -currentIndex * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+        }
+    
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+    
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navList = document.querySelector('.nav-list');
+    
+            // Toggle the menu when the burger button is clicked
+            menuToggle.addEventListener('click', function (event) {
+                event.stopPropagation(); // Prevent the click event from propagating to the document
+                navList.classList.toggle('show'); // Toggle visibility
+            });
+    
+            // Close the menu if clicked outside of it
+            document.addEventListener('click', function (event) {
+                // Check if the click target is not the menu toggle or the nav list
+                if (!menuToggle.contains(event.target) && !navList.contains(event.target)) {
+                    navList.classList.remove('show'); // Hide the menu
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+    
+
+
+    
+    
+
+
+    

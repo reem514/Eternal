@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Structural Analysis for High-Rise Buildings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="research-articles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #ffa500;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-bar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            background-color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .top-bar a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px auto;
+            max-width: 1200px;
+            flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+        }
+
+        .article-container {
+            flex: 3;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Ensure the article container takes full width on smaller screens */
+        }
+
+        .article-container h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: orange;
+        }
+
+        .article-container p {
+            margin-bottom: 10px;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .sidebar {
+            flex: 1;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Ensure the sidebar takes full width on smaller screens */
+        }
+
+        .sidebar h3 {
+            margin-bottom: 15px;
+            color: #ffa500;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ffa500;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack the content on small screens */
+                align-items: center;
+            }
+
+            .article-container {
+                width: 90%; /* Make the article container take up 90% of the width */
+            }
+
+            .sidebar {
+                width: 90%; /* Make the sidebar take up 90% of the width */
+                margin: 20px 0;
+            }
+
+            .top-bar {
+                justify-content: center;
+            }
+
+            .top-bar a {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
+        }
+
+        /* For smaller mobile screens */
+        @media (max-width: 480px) {
+            .top-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 5px 10px;
+            }
+
+            .top-bar a {
+                font-size: 0.8rem;
+                padding: 8px 12px;
+            }
+
+            .article-container h1 {
+                font-size: 1.5rem;
+            }
+
+            .article-container p {
+                font-size: 0.9rem;
+            }
+
+            .sidebar h3 {
+                font-size: 1.1rem;
+            }
+
+            .sidebar ul li a {
+                font-size: 0.9rem;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <!-- Top Bar with Button -->
+    <div class="top-bar">
+        <a href="research-articles.html">الرجوع إلى صفحة الأبحاث</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Article Content -->
+        <div class="article-container">
+            <h1>  أحدث اتجاهات التصميم المعماري لعام 2025 </h1> 
+       
+               <p>
+                   <h2> المقدمة </h2>
+                   مع التقدم التكنولوجي المستمر والتغيرات في احتياجات المجتمع، يشهد مجال التصميم المعماري تطورًا سريعًا. في 
+                   عام 2025، يُتوقع أن يكون هناك تحول كبير في الأساليب والاتجاهات التي تؤثر على كيفية تصميم المباني 
+                   والمساكن والمساحات العامة. سواء كان ذلك في التصميم الداخلي أو التصميم الخارجي،
+                    فإن الاتجاهات المعمارية لهذا العام ستعكس تطورًا في الاستدامة، التكنولوجيا، والراحة
+       
+               </p>
+       
+               <img src="arcitcle 2.jpg" alt="Structural Analysis for High-Rise Buildings">
+       
+               <h2>  في هذا المقال، نستعرض أبرز اتجاهات التصميم المعماري لعام 2025 التي ستشكل مستقبل المباني والمدن    </h2>
+
+
+               <p><strong>التصميم المستدام والبيئي</strong></p>
+                <p>
+                    تستمر الاستدامة في التربع على عرش اتجاهات التصميم المعماري، حيث يزداد التركيز على تقليل التأثير البيئي للمباني.
+                    وفي عام 2025، يتوقع أن تتزايد المشاريع المعمارية التي تستخدم المواد المستدامة والتقنيات البيئية المتطورة.
+                </p>
+        
+                <p><strong>المواد المستدامة:</strong></p>
+                <p>
+                    سيزداد الاعتماد على المواد الطبيعية مثل الخشب والخرسانة الخضراء، التي تُعتبر أكثر صداقة للبيئة مقارنة بالمواد التقليدية.
+                    كما ستزداد استخدامات المواد القابلة لإعادة التدوير.
+                </p>
+        
+                <p><strong>الطاقة الشمسية:</strong></p>
+                <p>
+                    من المتوقع أن تصبح الألواح الشمسية جزءًا لا يتجزأ من تصميم المباني الحديثة، حيث سيتم دمجها في الأسطح بشكل أكثر فعالية لتحقيق الطاقة الذاتية للمبنى.
+                </p>
+        
+                <p><strong>التصميمات العازلة:</strong></p>
+                <p>
+                    ستزداد استخدامات التقنيات العازلة لتحسين كفاءة الطاقة وتقليل استهلاك الطاقة في المباني، مثل النوافذ المزدوجة والجدران المعزولة.
+                </p>
+        
+                <p><strong>التكامل بين التكنولوجيا والعمارة: المباني الذكية</strong></p>
+                <p>
+                    المباني الذكية ستكون من أبرز الاتجاهات في عام 2025. مع تقدم التكنولوجيا، سيصبح من الممكن دمج تقنيات الذكاء الاصطناعي وإنترنت الأشياء (IoT) في تصميم المباني لتوفير بيئات مريحة وآمنة.
+                </p>
+        
+                <p><strong>التحكم الذكي:</strong></p>
+                <p>
+                    ستُدمج تقنيات التحكم الذكي في الإضاءة، التدفئة، التكييف، والأمن. ستكون المباني قادرة على ضبط الإضاءة ودرجة الحرارة بشكل تلقائي بناءً على تفضيلات المستخدم.
+                </p>
+        
+                <p><strong>التحكم عن بعد:</strong></p>
+                <p>
+                    يمكن للمقيمين التحكم في معظم جوانب المبنى باستخدام هواتفهم الذكية أو الأجهزة الأخرى.
+                </p>
+        
+                <p><strong>الطباعة ثلاثية الأبعاد:</strong></p>
+                <p>
+                    ستزداد استخدامات الطباعة ثلاثية الأبعاد في إنشاء عناصر معمارية وتصميمات مبتكرة، مما يسمح بتصنيع أجزاء معمارية دقيقة وعالية الجودة.
+                </p>
+        
+        
+                <p><strong>المساحات المفتوحة والتصميمات المدمجة</strong></p>
+                <p>
+                    مع تزايد الحاجة إلى التفاعل الاجتماعي في المساحات المشتركة، ستسود المساحات المفتوحة التي تدمج بين الوظائف المختلفة داخل المباني.
+                </p>
+        
+                <p><strong>المساحات متعددة الوظائف:</strong></p>
+                <p>
+                    سيزداد استخدام المساحات المتعددة الوظائف التي يمكن تحويلها بسهولة لتناسب احتياجات مختلفة. على سبيل المثال، سيتم دمج المكاتب المنزلية أو مساحات العمل المشتركة في المنازل لتلبية احتياجات العمل عن بُعد.
+                </p>
+        
+                <p><strong>المساحات المفتوحة:</strong></p>
+                <p>
+                    سيتزايد استخدام التصميمات المفتوحة في المنازل والمكاتب، مما يسمح بتدفق الهواء والضوء الطبيعي بسهولة بين الغرف.
+                </p>
+        
+                <p><strong>الحدائق الداخلية والخارجية:</strong></p>
+                <p>
+                    ستزداد المساحات الخضراء داخل المباني، مثل الحدائق الداخلية أو الحدائق العمودية، مما يساهم في تحسين جودة الهواء ويعزز الإحساس بالراحة.
+                </p>
+        
+                <p><strong>التصميمات المبتكرة باستخدام الأشكال العضوية</strong></p>
+                <p>
+                    تُظهر الاتجاهات الحديثة في التصميم المعماري زيادة في استخدام الأشكال العضوية والحرّة التي تحاكي الطبيعة. هذه الأشكال تتميز بخطوط منحنية وأسطوانية تعكس جمال الطبيعة.
+                </p>
+        
+                <p><strong>الأشكال العضوية:</strong></p>
+                <p>
+                    سيتم استخدام الأشكال المنحنية والمستديرة في واجهات المباني والأسطح الداخلية، مما يخلق بيئة مريحة وجمالية في نفس الوقت.
+                </p>
+        
+                <p><strong>المباني ذات الأسطح المتعرجة:</strong></p>
+                <p>
+                    من المتوقع أن نرى المزيد من المباني التي تتميز بأسطح متعرجة أو متموجة، مما يضيف طابعًا فنيًا وابتكاريًا للمباني.
+                </p>
+        
+                <p><strong>استخدام الضوء الطبيعي في التصميم المعماري</strong></p>
+                <p>
+                    الضوء الطبيعي هو عنصر أساسي في التصميم المعماري لعام 2025، حيث يُعتبر جزءًا من استراتيجية الاستدامة. التوجه نحو الإضاءة الطبيعية يساهم في تحسين صحة المقيمين ويوفر الطاقة.
+                </p>
+        
+                <p><strong>النوافذ الكبيرة:</strong></p>
+                <p>
+                    ستزداد استخدامات النوافذ الكبيرة التي تسمح بدخول الضوء الطبيعي إلى المساحات الداخلية بشكل أكبر. في المنازل والمكاتب، ستكون النوافذ الكبيرة جزءًا أساسيًا من التصميم المعماري.
+                </p>
+        
+                <p><strong>السقف الزجاجي:</strong></p>
+                <p>
+                    سيتزايد استخدام الأسطح الزجاجية في الأسطح العليا للمباني مثل الأسطح الزجاجية أو السقوف الزجاجية، مما يسمح بتدفق الضوء الطبيعي إلى المساحات الداخلية.
+                </p>
+        
+                <p><strong>المساحات المفتوحة:</strong></p>
+                <p>
+                    سيساهم التصميم المفتوح في الاستفادة من الضوء الطبيعي في المساحات المشتركة.
+                </p>
+        
+        
+                <p><strong>الاستدامة في المواد والتكنولوجيا</strong></p>
+                <p>
+                    ستستمر الاستدامة في التأثير على اختيارات المواد المستخدمة في البناء، حيث سيتم استخدام تقنيات ومواد جديدة تقلل من التأثير البيئي للمباني.
+                </p>
+        
+                <p><strong>الخرسانة الخضراء:</strong></p>
+                <p>
+                    ستزداد استخدامات الخرسانة الخضراء التي تحتوي على مكونات أقل تأثيرًا على البيئة مقارنة بالخرسانة التقليدية.
+                </p>
+        
+                <p><strong>الزجاج المعزول:</strong></p>
+                <p>
+                    سيتم استخدام الزجاج المعزول بشكل أكبر لتحقيق العزل الحراري والصوتي، مما يساهم في تقليل استهلاك الطاقة.
+                </p>
+        
+                <h1>خاتمة</h1>
+        
+                <p>
+                    عام 2025 سيشهد تطورًا ملحوظًا في التصميم المعماري، مع استخدام تقنيات جديدة ومستدامة تهدف إلى تحسين جودة الحياة وتلبية احتياجات المجتمع بشكل أفضل.
+                </p>
+        
+                <p>
+                    من المباني الذكية إلى التصميمات العضوية، ستستمر الابتكارات في التأثير على كيفية تصميم المباني والمساكن. إذا كنت تفكر في تصميم معماري لمشروعك، فإن <strong>إيترنال</strong> هنا للمساعدة في تحقيق رؤيتك وتحويلها إلى واقع مع الحفاظ على التوجهات المستقبلية في التصميم.
+                </p>
+        
+                <div class="conclusion">
+                    <p>بفضل الخبرات التقنية والمهنية في <strong>إيترنال</strong>، يمكننا تقديم حلول معمارية مبتكرة ومستدامة تلبي احتياجاتك بشكل كامل وتواكب أحدث اتجاهات التصميم.</p>
+                </div>
+               
+                 <a href="research-articles.html" class="back-link">&#8592; العودة إلى المقالات البحثية </a>
+        
+        
+        
+            </div>
+        <!-- Sidebar with Links -->
+        <div class="sidebar">
+            <h1>أبحاث أخرى</h1><hr><hr>
+            <ul>
+                <li><a href="article1.html">التشطيبات الحديثة: مفتاح لجعل منزلك أو مكتبك أكثر أناقة وراحة</a></li>
+                <li><a href="article2.html">أحدث اتجاهات التصميم المعماري لعام 2025</a></li>
+                <li><a href="article3.html">مراحل التصميم المعماري من الفكرة إلى التنفيذ</a></li>
+                <li><a href="article4.html">أهمية التصميم الإنشائي في البناء: الأساس لنجاح أي مشروع</a></li>
+                <li><a href="article5.html"> التي يواجهها المهندس الإنشائي في المشاريع المعقدة</a></li>
+                <li><a href="article6.html">كيف تختار الألوان المناسبة لتصميم داخلي عصري</a></li>
+                <li><a href="article7.html">أحدث اتجاهات التصميم الداخلي</a></li>
+                <li><a href="article8.html">كيف يساهم التصميم الداخلي في تحسين الإنتاجية في بيئات العمل</a></li>
+                <li><a href="article9.html">التصميم الخارجي: كيف تحسن واجهات المباني؟</a></li>
+                <li><a href="article10.html">كيف يساهم التصميم الخارجي في تعزيز جمالية المباني التجارية والسكنية</a></li>
+                <li><a href="article11.html">التصميم الداخلي: كيف تصمم المساحات الكبيرة بذكاء؟</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+</div>
+<!-- زر السهم الذي يأخذك للأعلى -->
+<div id="scroll-to-top" class="scroll-to-top">
+&#8593; <!-- السهم للأعلى -->
+</div>
+<script src="script.js"></script>
+</body>
+</html>

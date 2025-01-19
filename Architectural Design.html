@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETERNAL</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="index.css" media="screen">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="brief images.html">
+    <link rel="stylesheet" href="brief image2.html">
+    <link rel="stylesheet" href="brief images.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          // Handle click on the image container
+          $('.image-container').click(function() {
+              var imgSrc = $(this).find('img').attr('src');
+              var imgAlt = $(this).find('img').attr('alt');
+
+              // Show the lightbox with the clicked image
+              $('.lightbox-image').attr('src', imgSrc);
+              $('.lightbox-caption').text(imgAlt);
+              $('.lightbox').fadeIn();
+          });
+
+          // Hide the lightbox when clicking outside the content
+          $('.lightbox, .lightbox-blur').click(function() {
+              $('.lightbox').fadeOut();
+          });
+
+          // Prevent lightbox content from closing the lightbox on click
+          $('.lightbox-content').click(function(event) {
+              event.stopPropagation();
+          });
+      });
+    </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html">
+            <img src="logo-014.png" alt="Logo" class="header-logo">
+        </a>
+        <div class="container">
+            
+            <button class="menu-toggle">&#9776;</button> <!-- زر القائمة -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="research-articles.html">Research Articles</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+
+            
+        </div>
+    </header>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="architectural-title"> Architectural Design </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <div class="nav">
+        <a href="Architectural Design.html">Architectural Design</a>
+        <a href="Interior Design.html">Interior Design</a>
+        <a href="Landscape Design.html"> Landscape Design</a>
+    </div>
+    
+    <!-- Image Gallery Section -->
+    <div class="gallery">
+        <div class="image-container">
+            <a href="brief image28.html" target="_blank"></a>
+            <img src="01(13).jpg" alt="Modern building with triangular design"  onclick="window.location.href='brief image28.html';">
+            <div class="overlay"onclick="window.location.href='brief image28.html';">
+                <p class="description">Bank</p>
+            </div>
+        </div>
+
+
+        <div class="image-container">
+            <a href="brief image29.html" target="_blank"></a>
+            <img src="1(14).jpg" alt="Modern building with triangular design"  onclick="window.location.href='brief image29.html';">
+            <div class="overlay"onclick="window.location.href='brief image29.html';">
+                <p class="description">Hospital</p>
+            </div>
+        </div>
+
+        
+        <div class="image-container">
+            <a href="brief image30.html" target="_blank"></a>
+            <img src="0(15).jpg" alt="Modern building with triangular design"  onclick="window.location.href='brief image30.html';">
+            <div class="overlay"onclick="window.location.href='brief image30.html';">
+                <p class="description">leaves cafe </p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <a href="brief image31.html" target="_blank"></a>
+            <img src="01(16).png" alt="Modern building with triangular design"  onclick="window.location.href='brief image31.html';">
+            <div class="overlay"onclick="window.location.href='brief image31.html';">
+                <p class="description">Admin building faced1,2</p>
+            </div>
+        </div>
+        
+        
+        <!-- Repeat similar structure for other images as needed -->
+    </div>
+
+
+
+    <!-- Background Wrapper -->
+    <div class="background-wrapper">
+        <img src="001(16).png" alt="Background Image" class="background-image">
+        <div class="middle-text">Exterior Design</div>
+    </div>
+
+    <!-- Image Gallery Section -->
+    <div class="gallery">
+        <div class="image-container">
+            <img src="01(17).png" alt="Modern building with triangular design" onclick="window.location.href='brief image32.html';">
+            <div class="overlay" onclick="window.location.href='brief image32.html';">
+                <p class="description">Villa</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="001(18).jpg" alt="Modern building with triangular design" onclick="window.location.href='brief image33.html';">
+            <div class="overlay" onclick="window.location.href='brief image33.html';">
+                <p class="description"> residential Villa </p>
+            </div>
+        </div>
+
+    </div>
+        
+   
+    
+<!-- Footer Section -->
+<footer id="contact" class="footer-section">
+    <div class="footer-container">
+        <p>Contact us at <a href="mailto:eng.tantawy1@gmail.com">eng.tantawy1@gmail.com</a></p>
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com/eternal.engineering.services"><img src="white-facebook-fb-logo-icon-round-outline-png-11689106239acusrtxplx-removebg-preview.png" alt="https://www.facebook.com/eternal.engineering.services/"></a></li>
+            <li><a href="https://www.instagram.com/eternal.engineering?igsh=MjYzdG0zN2x2OW1m"><img src="images__1_-removebg-preview (1).png" alt="Twitter"></a></li>
+            <li><a href="https://www.linkedin.com/in/engmohamedeltantawy/"><img src="images-removebg-preview (2).png" alt="LinkedIn"></a></li>
+        </ul>
+        <p>&copy; 2024 Eternal. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- زر السهم الذي يأخذك للأعلى -->
+<div id="scroll-to-top" class="scroll-to-top">
+    &#8593; <!-- السهم للأعلى -->
+</div>
+<script src="script.js"></script>
+ 
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        // Toggle the menu when the burger button is clicked
+        menuToggle.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevent the click event from propagating to the document
+            navList.classList.toggle('show'); // Toggle visibility
+        });
+
+        // Close the menu if clicked outside of it
+        document.addEventListener('click', function (event) {
+            // Check if the click target is not the menu toggle or the nav list
+            if (!menuToggle.contains(event.target) && !navList.contains(event.target)) {
+                navList.classList.remove('show'); // Hide the menu
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
